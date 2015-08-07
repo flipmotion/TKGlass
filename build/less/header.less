@@ -1,0 +1,133 @@
+.header {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	.navbar-right {
+		margin: 0;
+	}
+	&.fix-header {
+		position: fixed;
+		top:0;
+		z-index: 4;
+		
+		.header-lvl-1 {
+			display: none;
+		}
+	}
+	&-lvl {
+		&-1 {
+			padding: 15px 0;
+			.call{
+				margin-top: 5px;
+			}
+			.logo {
+					display: table;
+					a {
+						width: 80px;
+					}
+					p{
+						padding-left: 10px;
+						font-size: 18px; 
+						line-height: 21px;
+					}
+					span{
+						font-size: 26px;
+					}
+					p,
+					a {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				img {
+					width: 100%;
+				}
+			}
+			.phone {
+				font-weight: 700;
+				color: #333;
+				font-size: 16px;
+				i,span{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				i {
+					margin-right: 5px;
+				}
+			}
+		}
+		&-2 {
+			background: rgba(0,0,0,.6);
+			position: absolute;
+			left:0;
+			width: 100%;
+			z-index: 3;
+			//border-top: 1px solid #33B3D3;
+			//border-bottom: 2px solid #33B3D3;
+			button {
+				border-color: #fff;
+				background:0 0;
+				font-size: 12px;
+				color:#fff;
+				text-transform: uppercase;
+				transition:@transition;
+				&:hover,&:focus {
+					background-color: #337ab7;
+					border-color: #2e6da4;
+				}
+			}
+		}
+	}
+	.navbar-default {
+		background: 0 0;
+		border: none;
+		min-height: 0px;
+		margin: 0;
+		border-radius: 0;
+		.navbar-nav>li>a {
+			text-transform: uppercase;
+			padding: 10px 15px;
+			font-size: 12px;
+			color: #fff;
+			position: relative;
+			&:after {
+				content: '';
+				width: 100%;
+				left: 0;
+				bottom: -17px;
+				height: 0px;
+				transition:@transition;
+				background: #337ab7;
+				position: absolute;
+			}
+			&:hover,&:focus {
+				color: #fff;
+				&:after {
+					height: 3px;
+				}
+			}
+		}
+		.navbar-nav>li.active>a {
+			background:0 0;
+			&:after {
+				content: '';
+				width: 100%;
+				left: 0;
+				bottom: -17px;
+				height: 3px;
+				transition:@transition;
+				background: #337ab7;
+				position: absolute;
+			}
+			&:hover,&:focus {
+				color: #fff;
+				&:after {
+					height: 3px;
+				}
+			}
+		}
+		.navbar-collapse {
+			padding: 15px 0;
+		}
+	}
+}

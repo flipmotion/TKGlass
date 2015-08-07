@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru_RU"> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='assets/css/style.min.css' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body >
+	<div class="sticky-page">
+		<section class="header">
+			<section class="header-lvl-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="logo"><a href="#"><img src="assets/img/logo.jpg" alt=""></a><p class="text-logo">Работаем для вас<br><span>с 2006 года!</span></p></div>
+							
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4 text-center">
+							<a href="#" data-toggle="modal" data-target="#call" class="btn btn-primary call">Получить бесплатную косультацию</a>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="text-right"><a href="tel:+7 (495) 773-0-333" class="phone"><i class="glyphicon glyphicon-earphone"></i><span>+7 (495) 773-0-333</span></a></div>
+							<div class="text-right"><a href="tel:+7 (495) 640-40-03" class="phone"><i class="glyphicon glyphicon-earphone"></i><span>+7 (495) 640-40-03</span></a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="header-lvl-2">
+				<nav class="my-navigation">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-md-12 col-sm-12">
+								<nav class="navbar navbar-default">
+									<div class="">
+										<!-- Brand and toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse" id="navbar-collapse">
+											<ul class="nav navbar-nav">
+												<li class="active"><a href="#">О нас</a></li>
+												<li><a href="#">Продукция</a></li>
+												<li><a href="#">Услуги</a></li>
+												<li><a href="#">Отзывы</a></li>
+												<li><a href="#">Контакты</a></li>
+											</ul>
+											<ul class="nav navbar-nav navbar-right">
+												<li><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary">оставить заявку</button></li>
+											</ul>
+										</div><!-- /.navbar-collapse -->
+									</div><!-- /.container-fluid -->
+								</nav>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</section>
+		</section>
+		
+		<section class="content">
+			<div class="slider-main" data-item="slider-main">
+				<div class="item">
+					<div class="my-item">
+						<img src="assets/img/slider-img.jpg" alt="">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12 col-sm-8 col-md-8">
+										<h2>This is simple title</h2>
+										<p class="description">This is simple description</p>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<p class="form-title">Оставте заявку прям сейчас!</p>
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="input-group">
+															<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-user"></i></span>
+															<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="input-group">
+															<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+															<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="input-group">
+															<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+															<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<button type="submit" class="btn btn-primary my-btn-second" value="block-1" name="from"><span>Оставить заявку</span><i class="glyphicon glyphicon-send"></i></button>
+													</div>
+												</div>
+											</div>
+												
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-title">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<p>Шкафы-купе</p>
+										<p>Раздвижные, распашные, маятниковые. Много отличных вариантов представлено в каталоге, сделаем на заказ по индивидуальному проекту</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="my-item">
+						<img src="assets/img/slider-img.jpg" alt="">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12 col-sm-8 col-md-8">
+										<h2>This is simple title</h2>
+										<p class="description">This is simple description</p>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<p class="form-title">Оставте заявку прям сейчас!</p>
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="input-group">
+															<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-user"></i></span>
+															<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="input-group">
+															<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+															<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="input-group">
+															<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+															<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="help-block with-errors"></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-xs-12">
+														<button type="submit" class="btn btn-primary my-btn-second" value="block-1" name="from"><span>Оставить заявку</span><i class="glyphicon glyphicon-send"></i></button>
+													</div>
+												</div>
+											</div>
+												
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-title">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<p>Шкафы-купе</p>
+										<p>Раздвижные, распашные, маятниковые. Много отличных вариантов представлено в каталоге, сделаем на заказ по индивидуальному проекту</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="content block-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center text-uppercase">Lorem ipsum dolor sit amet</h2>
+						<p class="subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 col-sm-3">
+						<div class="production">
+							<img src="assets/img/shkafi-kupe.jpg" alt="" class="full-width">
+							<h4 class="text-center">Production title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div><button type="button" data-toggle="modal" data-target="#call" class="btn btn-primary text-uppercase">Заказать</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="content block-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center text-uppercase">Lorem ipsum dolor sit amet</h2>
+						<p class="subtitle text-center">Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+							<div class="row">
+								<div class="col-xs-12 col-md-4 col-sm-4">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="input-group">
+													<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-user"></i></span>
+													<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="help-block with-errors"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							
+								<div class="col-xs-12 col-md-4 col-sm-4">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="input-group">
+													<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+													<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="help-block with-errors"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							
+								<div class="col-xs-12 col-md-4 col-sm-4">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<button type="submit" class="btn btn-success my-btn-second" value="block-1" name="from"><span>Оставить заявку</span><i class="glyphicon glyphicon-send"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+								
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section class="content block-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center text-uppercase">Услуги</h2>
+						<p class="subtitle text-center">Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-4">
+						<div class="item">
+							<div><i class="glyphicon glyphicon-road"></i></div>
+							<h2>Доставка</h2>
+							<p>Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-4">
+						<div class="item">
+							<div><i class="glyphicon glyphicon-cog"></i></div>
+							<h2>Доставка</h2>
+							<p>Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-4">
+						<div class="item">
+							<div><i class="glyphicon glyphicon-wrench"></i></div>
+							<h2>Доставка</h2>
+							<p>Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="content block-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center text-uppercase">Отзывы</h2>
+						<p class="subtitle text-center">Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="slider-main" data-item="slider-main">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-7 col-sm-7">
+										<div class="quote-info">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+											<cite>- John Doe<span>ABC Company</span></cite>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-5 col-sm-5">
+										<img src="assets/img/review-1.png" class="img-responsive" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									
+									<div class="col-xs-12 col-md-5 col-sm-5">
+										<img src="assets/img/review-1.png" class="img-responsive" alt="">
+									</div>
+									<div class="col-xs-12 col-md-7 col-sm-7">
+										<div class="quote-info">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+											<cite>- John Doe<span>ABC Company</span></cite>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="content block-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center text-uppercase">Lorem ipsum dolor sit amet</h2>
+						<p class="subtitle text-center">Suspendisse at nisl libero. Ut sed vestibulum ex. Aliquam hendrerit nulla vel sem condimentum ultrices.<br/>Pellentesque sit amet augue mi. Nulla cursus auctor mi, vitae tincidunt enim sodales.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+							<div class="row">
+								<div class="col-xs-12 col-md-4 col-sm-4">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="input-group">
+													<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-user"></i></span>
+													<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="help-block with-errors"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							
+								<div class="col-xs-12 col-md-4 col-sm-4">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="input-group">
+													<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+													<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="help-block with-errors"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							
+								<div class="col-xs-12 col-md-4 col-sm-4">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<button type="submit" class="btn btn-success my-btn-second" value="block-1" name="from"><span>Оставить заявку</span><i class="glyphicon glyphicon-send"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+								
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact contact-1" id="map">
+			<div class="map-holder">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5651.8296993995145!2d60.10848347374452!3d55.05313854813573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c53e31c0c825bf%3A0xd527b10221ff9fe2!2z0L_RgC4g0JDQstGC0L7Qt9Cw0LLQvtC00YbQtdCyLCAzOSwg0JzQuNCw0YHRgSwg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LsuLCA0NTYzMDQ!5e0!3m2!1sru!2sru!4v1438710531032"></iframe>
+			</div>
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>г. Москва, м. Киевская, Бережковская набережная 20 стр.</h3>
+						<h3>Работаем ежедневно с 9:00 до 21:00!</h3>
+						<h4>+7 (495) 773-0-333</h3>
+						<h4>+7 (495) 640-40-03</h3>
+					</div>
+				</div>
+			</div>
+		
+			<div class="map-toggle">
+				<div class="switch"></div>
+				<h6 class="text-white">Показать карту</h6>
+			</div>
+		</section>
+			
+		
+	</div>
+	
+	<section class="footer">
+		<section class="footer-lvl-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<p>© Global Glass 2015</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+<div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<p class="form-title">Оставте заявку прям сейчас!</p>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-user"></i></span>
+							<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+							<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+							<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-xs-12">
+						<button type="submit" class="btn btn-primary my-btn-second" value="block-1" name="from"><span>Оставить заявку</span><i class="glyphicon glyphicon-send"></i></button>
+					</div>
+				</div>
+			</div>
+				
+		</form>
+	</div>
+</div>
+<div class="modal fade" id="thx" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+	 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <div class="modal-body text-center">
+		<p>Спасибо!</p><p>Наш специалист свяжется с Вами в течение дня!</p>
+	  </div>
+	</div>
+  </div>
+</div>
+	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<!--<link href='assets/css/fontello.css' rel='stylesheet' type='text/css'>-->
+	<link href='assets/css/owl.carousel.css' rel='stylesheet' type='text/css'>
+	<!--<link href='assets/css/lightbox.css' rel='stylesheet' type='text/css'>-->
+	<!--<script type="text/javascript" src="assets/js/lightbox.min.js"></script>-->
+	<script type="text/javascript" src="assets/js/form.js"></script>
+	<script type="text/javascript" src="assets/js/validator.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+	<!--<script type="text/javascript" src="assets/js/typeahead.js"></script>-->
+	<script type="text/javascript" src="assets/js/main.min.js"></script>
+	
+<!--подключаем бс3.2!-->
+
+<!--подключаем бс3.2!-->
+</html>

@@ -1,7 +1,8 @@
 $(document).ready(function() {
+	$("body").scrollspy({target: "#menu", offset:70});
 	$('a.smooth').click(function(){
 		$('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top - 80
+			scrollTop: $( $.attr(this, 'href') ).offset().top - 70
 		}, 1000);
 		return false;
 	});
